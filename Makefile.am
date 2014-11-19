@@ -1,6 +1,6 @@
 doc_DATA = README INSTALL COPYING
 
-pkgconfig_DATA = libczmq++.pc
+pkgconfig_DATA = libczmqpp.pc
 
 ACLOCAL_AMFLAGS = -I m4
 
@@ -32,9 +32,9 @@ czmq___impl_include_HEADERS = \
 #
 # library
 #
-lib_LTLIBRARIES = src/libczmq++.la
+lib_LTLIBRARIES = src/libczmqpp.la
 
-src_libczmq___la_SOURCES = \
+src_libczmqpp_la_SOURCES = \
     src/authenticator.cpp \
     src/certificate.cpp \
     src/context.cpp \
@@ -55,21 +55,21 @@ examples_ironhouse2_SOURCES=\
     examples/ironhouse2.cpp
 
 examples_ironhouse2_LDADD=\
-    src/libczmq++.la \
+    src/libczmqpp.la \
     ${libczmq_LIBS}
 
 examples_poller_test_SOURCES=\
     examples/poller_test.cpp
 
 examples_poller_test_LDADD=\
-    src/libczmq++.la \
+    src/libczmqpp.la \
     ${libczmq_LIBS}
 
 examples_thread_test_SOURCES=\
     examples/thread_test.cpp
 
 examples_thread_test_LDADD=\
-    src/libczmq++.la \
+    src/libczmqpp.la \
     ${libczmq_LIBS}
 
 CLEANFILES=${EXTRA_PROGRAMS}

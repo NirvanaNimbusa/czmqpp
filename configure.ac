@@ -75,6 +75,6 @@ AX_CHECK_COMPILE_FLAG([-fstack-protector-all],
 
 # Generate output files.
 #------------------------------------------------------------------------------
-AC_CONFIG_FILES([Makefile libczmq++.pc])
+AC_CONFIG_FILES([Makefile libczmqpp.pc])
 AC_OUTPUT
 
